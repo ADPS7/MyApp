@@ -1,13 +1,12 @@
-import 'feature/home/presntation/view/vista_error.dart';
 import 'package:flutter/material.dart';
 
-import 'feature/home/presntation/view/vista_principal.dart';
+import 'feature/home/presntation/view/vista_cargando.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: error(),
+      home: cargando(),
     ),
   );
 }
