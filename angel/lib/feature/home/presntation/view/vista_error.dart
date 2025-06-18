@@ -9,16 +9,23 @@ class Failure extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
     body: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center, // 🔴 Esto centra verticalmente
-        crossAxisAlignment: CrossAxisAlignment.center, // (opcional) centra horizontalmente
-        children: [
-          Image.network("https://media.istockphoto.com/id/827247322/es/vector/se%C3%B1al-de-peligro-vector-icono-ilustraci%C3%B3n-de-atenci%C3%B3n-atenci%C3%B3n-negocio-concepto-simple-plana.jpg?s=612x612&w=0&k=20&c=iEXTniBp9NMjwYdYvsAuaV6NyvMHAmOtTlfXT5ipR-w="),
-           // Espacio entre imagen y texto
-          Text("Error"),
-        ],
-      ),
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(Icons.error, color: const Color.fromARGB(255, 247, 21, 5), size: 80),
+        const SizedBox(height: 20),
+        Text("𝙇𝙤 𝙨𝙚𝙣𝙩𝙞𝙢𝙤𝙨, 𝙝𝙪𝙗𝙤 𝙪𝙣 𝙚𝙧𝙧𝙤𝙧",
+          style: TextStyle(fontSize: 18, color:Color.fromARGB(242, 214, 51, 2)),
+        ),
+        const SizedBox(height: 10),
+        ElevatedButton(
+          onPressed: () {
+          },
+          child: Text("𝙍𝙚𝙞𝙣𝙩𝙚𝙣𝙩𝙖𝙧"),
+        ),
+      ],
     ),
-    );
-  }
+    )
+  );
+}
 }
