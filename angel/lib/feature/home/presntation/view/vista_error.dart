@@ -7,10 +7,10 @@ class Failure extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        fit: StackFit.expand, // Hace que la imagen cubra toda la pantalla
+        fit: StackFit.expand, 
         children: [
           Opacity(
-            opacity: 0.3, // Puedes ajustar esto para que el fondo no opaque el contenido
+            opacity: 0.3,
             child: Image.network(
               "https://i.imgur.com/EMG3QVT.png",
               fit: BoxFit.cover,
@@ -37,7 +37,7 @@ class Failure extends StatelessWidget {
                 const SizedBox(height: 10),
                 ElevatedButton(
                   onPressed: () {
-                    // Acción del botón
+                    
                   },
                   child: const Text("𝙍𝙚𝙞𝙣𝙩𝙚𝙣𝙩𝙖𝙧"),
                 ),

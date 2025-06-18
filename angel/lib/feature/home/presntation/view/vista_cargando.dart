@@ -15,7 +15,7 @@ class Loading extends StatelessWidget {
       // Fondo con imagen
       Opacity(
         opacity: 1,
-        child: Image.network("https://i.pinimg.com/1200x/10/8a/5d/108a5d3d6c5f0e71ab2faaa0d3fa9a52.jpg",
+        child: Image.network("https://i.imgur.com/EMG3QVT.png",
           fit: BoxFit.cover,
         ),
       ),
