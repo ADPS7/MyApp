@@ -1,4 +1,4 @@
-import 'package:app/feature/bloc/home_bloc.dart';
+import 'package:app/feature/home/presntation/bloc/home_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -21,9 +21,9 @@ class Myapp extends StatelessWidget {
           return MaterialApp(
             home: BlocBuilder<HomeBloc, HomeState>(
             builder: (context, state) {
-              if (state is HomeLoadSucces){
-                return Principal();
-              } else if (state is HomeLoadProgress){
+              if (state is HomeLoadSuccess){
+                return Principal(libros: state.libro.libros);
+              } else if (state is HomeLoadInProgress){
                 return Loading();
               } else if (state is HomeLoadFailure){
                 return Failure();

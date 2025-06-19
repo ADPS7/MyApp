@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app/feature/bloc/home_bloc.dart';
+import 'package:app/feature/home/presntation/bloc/home_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Bienvenido extends StatelessWidget {
